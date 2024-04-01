@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Age calculator app</title>
+  <link rel="stylesheet" href="./assets/css/misestilos.css">
+</head>
+
+<body>
+
+  <main class="contenido" role="main">
+    <div class="contenedor">
+  
+      <div class="ingreso-datos">
+
+        <!-- Dia -->
+        <div>
+          <h6>Dia</h6>
+          <input type="text" placeholder="DD" id="dayIn">
+          <p class="error"></p>
+        </div>
+
+        <!-- Mes -->
+        <div>
+          <h6>Mes</h6>
+          <input type="text" placeholder="MM" id="monthIn">
+          <p class="error"></p>
+        </div>
+
+        <!-- Año -->
+        <div>
+          <h6>Año</h6>
+          <input type="text" placeholder="AAAA" id="yearIn">
+          <p class="error"></p>
+        </div>
+      </div>
+
+      <!-- Boton -->
+      <hr>
+      <button id="calculateBtn">
+        <img src="./assets/images/icon-arrow.svg" alt="">
+      </button>
+
+      <!-- Resultado -->
+      <div class="result">
+        <h1><span id="yearOut">--</span> Año(s)</h1>
+        <h1><span id="monthOut">--</span> Mes(es)</h1>
+        <h1><span id="dayOut">--</span> dia(s)</h1>
+      </div>
+    </div>
+  </main>
+
+          <br>  
+   <div class="pie-de-web">Reto por: <span> Mario E. Galindo</span></div>
+
+
+  <script src="./assets/js/calcular.js"></script>
+</body>
+</html>
